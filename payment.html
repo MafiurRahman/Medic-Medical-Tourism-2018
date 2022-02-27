@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>payment-</title>
+  <link rel="stylesheet" type="text/css" href="newcss.css">
+  <link rel="stylesheet" type="text/css" href="newcss.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="newjavascript.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 62px;
+    border: 1px solid #000000;
+    border-radius: 89px;
+    background: #616eb0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#616eb0), to(#060333));
+    background: -moz-linear-gradient(top, #616eb0, #060333);
+    background: linear-gradient(to bottom, #616eb0, #060333);
+    -webkit-box-shadow: #ff5959 0px 0px 40px 0px;
+    -moz-box-shadow: #ff5959 0px 0px 40px 0px;
+    box-shadow: #ff5959 0px 0px 40px 0px;
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal normal 25px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #7484d3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7484d3), to(#07043d));
+    background: -moz-linear-gradient(top, #7484d3, #07043d);
+    background: linear-gradient(to bottom, #7484d3, #07043d);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #3a426a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3a426a), to(#060333));
+    background: -moz-linear-gradient(top, #3a426a, #060333);
+    background: linear-gradient(to bottom, #3a426a, #060333);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFNUlEQVRIiZ2VW2yUVRDHf3N2l+0uW6G7LNvuLttSSrHFS2nBKyqUChqp/aoCkUTUGOMlQqKmL2rCgw8mRmN88m6i8YIPYr+KCoVCLYJYaNOsJa61lALbQldKtxcbKe0eH7q7tChqmOTLN3POnDMz/5kzI4DiCqiyshKlVIaIKK31qGma/6gnSQOJyxiaup4AlGEYLuBpT5bjwXnZmQVKiTr9+x8nT8dGaoE3amtrY1P1pxpI0VR5Gm8YRqHX7fx6k7G4YNl1fmwWAREmEgmO/naWj7a3x45H4xtM02xMnbUko9CXRJWS0+uGYXhzvDObXn729vmFeW6UUmlVEYXPM5PblgVnRrrOPTDHl2tGIpFYysPUX11GVoBSwtanNpaGPLMdiAhaaxoOdvPaB8289VkroHFm2Niyaakrw255s7q6WgHKOgWvqQanQVRVVeUszPdsLC7woLUGET6pO8pMh40nH1wyuZYM1+t2cFNJoHzfoRP5QOeliU1cko8UX7gozz07hd+n5lH2/niC49FB3t3WRqx/FAFEawQoWuBRIlIKkIrgv0rV6ciwIiIAuJw25nqcBH2Zk5sZVkjuATjsVrTWLkBNhWSq99N4EYnG+kcBjdZw7SIvYxcmyAteRXGBh0yXHZ0uC01f/ygiEgUSl6v9S/ne8K+x9j/PTyBoFsybzdMbS/mm8Rgd3ef4rqkL0KA1Gjgc7o0DhwBSZfqvXyQS0fNyF8QtFrn/msK5IIIny8HNJQGsFiHXPwv3LAeI0HT4FN80HnvVNM3dgPwviICEUmrbl7s63v/2+2OTVaM1GXYrixd6yQ/OQmtoDveys21s7Pm3P/zp4KCehBdQ69at48KFC67a2tqhqqqqGUCF3W5/PCcnp3RkZORcf3//Vza7/eOa9z9efbDuq7fiv/ygVpRlkx+ajVLCqdPDNB3pYXzOYlZtfAirbQaI1As8JoZhFNstllecVmv5wPnzr/h8vodXrlxZWFFRgcfjYXx8nHA4zO49e8aHtVivv2Ml3nkhOttaiZ06iU4kcGf7KSxbik4kaN27h4GeKMGiYm68e22NGIax/pHioi8CLheNthls2bIFm80GkH6xKTp79iwNDQ2EO49hbH4OS1LveHuY1j31eB121qxZQ0FBAWZdHTqQV2PVWh/qHhqmMj8fM/zztHLSWtPb20tLSwulpaX4/X42bNiAbft2OlqPMDIYp6vlMCVFV/P8E4/jdrvTZ305frqGh7GKSG/X4GA3kLcs00VzczPLly9PK3q9XrKzs9mxYwd9fX0EAgE6OztRFgtrVq/m0ZdexG63AzA2NkZzczMN+xrxLCrilrXG5Dy4v7r68/cqVq23KsWbp8/wwtatRKNRgsFg+vWKCBMTE0SjUbTWhEIhRAQRYWBggPr6elp+bidvSRnX3b4CpysTNDVWgAmtD/wWj69f5vPhHRpi8+bNsZ6enh258+ffe9utt84pLy8nKysLpRShUCgNX0dHBzt37eLM0Agl5Xeyfu19aYe01giS7kWHIgMD3JCdzR0BPzsPHKwzTfOJn+Kjwa728OrX33kPt93GqvJycnNzaWtrY1/Tfpw5fkrvMVie409fPD2JF5tde+dAfKSlL+b64Gh7N/AFkLDOsM0tXFLGwiVlxH+P0bj/e+J7GwksXMRdzzyL3XFxNmitp1VdGlqSPf8+w9idgIjW+kXTNIcAWkbHD2utl/7dtf9HgtSkImBC60rTNMeSokri2I1IyZUaQCdbBZcZ+kf+GHfKxTxdwf2M/QXJTRbaIxdDsgAAAABJRU5ErkJggg==") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+       
+</style>
+</head>
+<body class="body1">
+<div class="uppernav">
+<img class="logo" src="logofinal.png">
+<p class ="headd"align="center">! MEDIC !</p>
+</div>
+<font color="white">
+<h1>Complete your paymet</h1><br>
+<p>Choose your desired payment method and copmplete the payment.<br> It's simple and easy.<br> (You can pay your bill via <big><b>bKash</b></big> only for service in Bangladesh)</p>
+</font> 
+<br>
+<br>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+			  <i><img src="bkash.png" height="30px" width="40px"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <a class="button" href="paysuccess.html"> Done</a>
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

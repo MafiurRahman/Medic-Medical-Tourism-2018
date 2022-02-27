@@ -1,0 +1,107 @@
+.headd{
+	font-size:70px;
+	font-family:Times New Roman;
+	color: red;
+}
+.logo{
+
+background-color: #dc0511;
+background-image: linear-gradient(52deg, #dc0511 17%, #7d68f7 67%, #ffffff 100%);
+
+  border-radius: 100px;
+	height:25%;
+	width:20%;
+	padding:20px;
+	
+}
+.i2{
+	    height: 195px;
+    width: 3x00px00px;
+	float:left;
+	margin-right:20px;
+	
+}
+.bg{
+	
+	
+	text-align:justify; 
+	color:white; 
+
+}
+.bg1{
+
+
+padding:10px;
+}
+.f{
+	font-family:gotham;
+	font-size: 50px;
+	color:red;
+}
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header1 {
+  text-align: center;
+  padding: 32px;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.cont{
+background-color: #dc0511;
+background-image: linear-gradient(52deg, #dc0511 17%, #7d68f7 50%,green 100%);
+
+padding:20px;
+	  border-radius: 0px 0px 0px 0px;
+}
